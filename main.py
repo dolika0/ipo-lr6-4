@@ -6,10 +6,9 @@
 - Сортирует найденные строки в порядке их длины (от самой короткой к самой длинной) и выводит их.
 
 '''
-
 polzStr =  input("Введите строку для поиска\n") # Запрос от пользователя
 
-with open('text.txt' , 'r' , encoding='utf-8') as file: # Открываем файл
+with open('C:/Users/ASUS/Documents/text.txt' , 'r' , encoding='utf-8') as file: # Открываем файл
     strings = file.readlines() # Считываем строки
 
 lines = [] # Создаем список,куда будем заносить строки с подстрокой
@@ -24,5 +23,6 @@ for line in lines: # Цикл самих строк
 
 sorted_lines = sorted(lines, key = len) # Сортируем строки по длине
 
+print("\nОтсортированные строки по длине : ")
 for line in sorted_lines: # Выводим строки по длине
     print(line) # Выводим строки
