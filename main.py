@@ -8,7 +8,7 @@
 '''
 polzStr =  input("Введите строку для поиска\n") # Запрос от пользователя
 
-with open('C:/Users/ASUS/Documents/text.txt' , 'r' , encoding='utf-8') as file: # Открываем файл
+with open('text.txt' , 'r' , encoding='utf-8') as file: # Открываем файл
     strings = file.readlines() # Считываем строки
 
 lines = [] # Создаем список,куда будем заносить строки с подстрокой
